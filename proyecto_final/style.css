@@ -1,0 +1,107 @@
+/* Letra de google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ======= Variables Globales ======= */
+:root {
+    --primary-color: #000066;
+    --text-gray-color: #8E8E8E;
+    --text-white-color: #fff;
+
+}
+
+/* ===== Reset de estilos ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*============= Reset de estilos ===========*/
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/*========= Inicio ============*/
+
+
+/*========= Header > logo ============*/
+
+.logo {
+    padding: 0px 20px;
+    font-size: 0.8em;
+}
+
+.logo h1 {
+    color: var(--primary-color);
+}
+
+.logo span {
+    color: var(--text-gray-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+/*========= Header > Nav ============*/
+
+.inicio-nav ul li {
+    display: inline;
+    padding: 5px 20px;
+}
+
+/* ======== Main ========= */
+
+/* ====== Main > Hero ====== */
+
+.inicio-hero {
+    background-color: #a6a6bf;
+    height: 100vh;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text-white-color);
+    background-image: linear-gradient(to right, rgba(0, 0, 102, 0.8),
+            rgba(0, 0, 102, 0.4)), url(resources/img/grupo-de-jovenes.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inicio-hero h2 {
+    font-size: 3.5em;
+}
+
+.inicio-hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.inicio-hero a {
+    text-decoration: none;
+    font-size: 1em;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 12px 26px;
+
+}
+
+.inicio-hero div a + a {
+    margin-left: 20px;
+    color: var(--text-white-color);
+}
+
+.button-v2 {
+    color: var(--primary-color);
+    background-color: white;
+}
