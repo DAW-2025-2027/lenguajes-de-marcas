@@ -255,13 +255,13 @@ header {
     color: var(--text-gray-color);
 }
 
-.contacto-main .informacion .cartas .horario h4{
+.contacto-main .informacion .cartas .horario h4 {
     margin-bottom: 6px;
     font-size: 1.2em;
 }
 
 
-.contacto-main .informacion .cartas .horario{
+.contacto-main .informacion .cartas .horario {
     background-color: rgb(237, 237, 237);
     flex-direction: column;
     line-height: 0px;
@@ -307,4 +307,97 @@ header {
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
+}
+
+
+/*=====================================================*/
+/*=============== OFERTA EDUCATIVA ====================*/
+/*=====================================================*/
+
+.oferta-educativa-main {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oferta-educativa-main h2 {
+    font-size: 2.4em;
+    margin-bottom: 12px;
+}
+
+.oferta-educativa-main>p {
+    font-size: 1.1em;
+    color: var(--text-gray-color);
+    max-width: 50vw;
+    text-align: center;
+}
+
+/* ======== Ciclos ============ */
+
+.oferta-educativa-main .ciclos {
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90vw;
+    gap: 30px;
+}
+
+.oferta-educativa-main .ciclos>div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 25px;
+    width: 25%;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.1s ease-in-out;
+}
+
+.oferta-educativa-main .ciclos>div:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.oferta-educativa-main .ciclos .icono {
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.oferta-educativa-main .ciclos h3 {
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+.oferta-educativa-main .ciclos .tipo-ciclo {
+    color: rgb(0, 215, 0);
+    font-size: 0.8em;
+
+}
+
+.oferta-educativa-main .ciclos .descripcion-ciclo {
+    margin: 20px 0;
+    color: var(--text-gray-color);
+    line-height: 20px;
+}
+
+.oferta-educativa-main .ciclos .informacion-extra-ciclo {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+.oferta-educativa-main .ciclos .informacion-extra-ciclo span {
+    color: var(--text-gray-color);
+}
+
+.oferta-educativa-main .ciclos .informacion-extra-ciclo a {
+    text-decoration: none;
+    color: #000066;
 }
