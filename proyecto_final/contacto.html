@@ -33,7 +33,8 @@
             <div class="cartas">
                 <h3>Informacion de contacto</h3>
                 <div>
-                    <div class="icono">
+                    <div class="icono icono-azul">
+                        <img src="sources/img/maps-azul.svg" alt="icono de maps">
                     </div>
                     <div>
                         <h3>Dirección</h3>
@@ -46,7 +47,7 @@
                 </div>
                 <div>
                     <div class="icono">
-
+                          <img src="sources/img/phone.svg" alt="icono telefono">
                     </div>
                     <div>
                         <h3>Teléfono</h3>
@@ -57,7 +58,7 @@
                 </div>
                 <div>
                     <div class="icono">
-
+                        <img src="sources/img/email.svg" alt="icono email">
                     </div>
                     <div>
                         <h3>Email</h3>
@@ -83,8 +84,35 @@
                         <input type="email" id="email" placeholder="tu@gmail.com">
                     </div>
                     <div class="input">
+                        <label for="telefono">Telefono</label>
+                        <input type="number" id="telefono" placeholder="Tu telefono">
+                    </div>
+                    <div class="input">
                         <label for="asunto">Asunto</label>
                         <input type="text" id="asunto" placeholder="¿En qué podemos ayudarte?">
+                    </div>
+                    <div class="input">
+                        <label for="genero">Genero</label>
+                        <div class="input-radio">
+                            <div>
+                                <label for="femenino">Femenino</label>
+                                <input type="radio" id="femenino" name="genero">
+                            </div>
+                            <div>
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" id="masculino" name="genero">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="provincia">Provincia</label>
+                        <select name="provincia" id="provincia">
+                            <option value="">Provincia...</option>
+                            <option value="pontevedra"> Pontevedra</option>
+                            <option value="lugo"> Lugo </option>
+                            <option value="ourense"> Ourense </option>
+                            <option value="a coruña"> A Coruña </option>
+                        </select>
                     </div>
                     <div class="textarea">
                         <label for="mensaje">Mensaje</label>

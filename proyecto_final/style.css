@@ -245,10 +245,25 @@ header {
 }
 
 .contacto-main .informacion .cartas .icono {
-    background-color: gainsboro;
     width: 45px;
     height: 45px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-main .informacion .cartas .icono img{
+    width: 60%;
+    height: 60%;
+}
+
+.icono-azul {
+   background-color: #0064fa24;
+}
+
+.icono-verde {
+
 }
 
 .contacto-main .informacion .cartas p {
@@ -285,7 +300,7 @@ header {
     margin-bottom: 20px;
 }
 
-.formulario-contacto .input input, .textarea textarea {
+.formulario-contacto .input input, select, .textarea textarea {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid rgb(216, 216, 216);
@@ -307,6 +322,19 @@ header {
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
+}
+
+.formulario-contacto .input-radio {
+    display: flex;
+    font-size: 0.9em;
+    color: var(--text-gray-color);
+}
+
+.formulario-contacto .input-radio div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
 }
 
 
