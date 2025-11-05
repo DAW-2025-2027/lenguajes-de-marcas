@@ -15,7 +15,6 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-
 }
 
 body {
@@ -112,7 +111,8 @@ header {
 
 /* ========= Inicio Nosotros ========= */
 
-.inicio-nosotros {
+.inicio-nosotros,
+.informacion-general {
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
@@ -121,21 +121,24 @@ header {
     margin: auto;
 }
 
-.inicio-nosotros h3 {
+.inicio-nosotros h3,
+.informacion-general h3 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.inicio-nosotros p {
+.inicio-nosotros p,
+.informacion-general p {
     color: var(--text-gray-color);
 }
 
-.inicio-nosotros .titulo {
+.inicio-nosotros .titulo,
+.informacion-general .titulo {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.inicio-nosotros .titulo p {
+.inicio-nosotros .titulo p, .informacion-general .titulo p {
     font-size: 1.2em;
 }
 
@@ -173,7 +176,7 @@ header {
 }
 
 .inicio-nosotros .cartas-informacion>div .icono {
-    background-color: var(--text-gray-color);
+    background-color: #00006630;
     height: 50px;
     width: 50px;
     border-radius: 100%;
@@ -244,7 +247,7 @@ header {
     margin-bottom: 5px;
 }
 
-.contacto-main .informacion .cartas .icono {
+.contacto-main .informacion .cartas .icono, .cartas-informacion .icono {
     width: 45px;
     height: 45px;
     border-radius: 10px;
@@ -263,7 +266,7 @@ header {
 }
 
 .icono-verde {
-
+   background-color: #00fa1d24;
 }
 
 .contacto-main .informacion .cartas p {
@@ -335,6 +338,19 @@ header {
     align-items: center;
     gap: 10px;
     margin-right: 10px;
+}
+
+.formulario-contacto .terminos-condiciones {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8em;
+    color: var(--text-gray-color);
+    margin-bottom: 10px;
+}
+
+.formulario-contacto .terminos-condiciones span {
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 
