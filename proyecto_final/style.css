@@ -1,46 +1,59 @@
-/* Letra de google */
+/* ======================= */
+/* ===== GOOGLE FONT ===== */
+/* ======================= */
+/* Letra de google - font google */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ======= Variables Globales ======= */
+/* ======================= */
+/* ===== VARIABLES ======= */
+/* ======================= */
+/* Variables globales, colores y estilos base - variables globales */
 :root {
     --primary-color: #000066;
     --text-gray-color: #8E8E8E;
     --text-white-color: #fff;
-
 }
 
-/* ===== Reset de estilos ===== */
-
+/* ======================= */
+/* ===== RESET GLOBAL ==== */
+/* ======================= */
+/* Reset de márgenes y padding, fuente base Roboto - reset global */
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
 
+/* ======================= */
+/* ===== BODY ============ */
+/* ======================= */
+/* Fondo gris claro global - body background */
 body {
     background-color: rgba(245, 245, 245, 0.3);
 }
 
-/*===================================================*/
-/*=================== INICIO ========================*/
-/*===================================================*/
+/* ======================= */
+/* ===== HEADER ========= */
+/* ======================= */
+/* Header principal, logo y navegación - header inicio */
 
-
-/*========= Header > logo ============*/
-
+/* Logo del header - logo */
 .logo {
     padding: 0px 20px;
     font-size: 0.8em;
 }
 
+/* Título principal logo - h1 logo */
 .logo h1 {
     color: var(--primary-color);
 }
 
+/* Subtítulo logo / descripción corta - span logo */
 .logo span {
     color: var(--text-gray-color);
 }
 
+/* Contenedor header - header fixed */
 header {
     display: flex;
     justify-content: space-between;
@@ -52,17 +65,18 @@ header {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/*========= Header > Nav ============*/
-
+/* Navegación principal header - nav inicio-nav */
 .inicio-nav ul li {
     display: inline;
     padding: 5px 20px;
 }
 
-/* ======== Main ========= */
+/* ======================= */
+/* ===== MAIN ============ */
+/* ======================= */
+/* Contenedor principal de contenido - main */
 
-/* ====== Main > Hero ====== */
-
+/* Hero sección inicial - hero inicio-hero */
 .inicio-hero {
     background-color: #a6a6bf;
     height: calc(100vh - 83px);
@@ -79,38 +93,44 @@ header {
     background-repeat: no-repeat;
 }
 
+/* Título principal hero - h2 hero */
 .inicio-hero h2 {
     font-size: 3.5em;
 }
 
+/* Subtítulo hero / descripción corta - p hero */
 .inicio-hero p {
     font-size: 1.2em;
     margin-bottom: 30px;
 }
 
+/* Botones hero - botones hero */
 .inicio-hero a {
     text-decoration: none;
     font-size: 1em;
     border: 2px solid white;
     border-radius: 12px;
     padding: 12px 26px;
-
 }
 
-.inicio-hero div a+a {
+/* Espaciado entre botones hero - margen botones hero */
+.inicio-hero a+a {
     margin-left: 20px;
     color: var(--text-white-color);
 }
 
+/* Botón secundario hero - button-v2 */
 .button-v2 {
     color: var(--primary-color);
     background-color: white;
 }
 
+/* ======================= */
+/* ===== NOSOTROS ======== */
+/* ======================= */
+/* Sección historia y cartas informativas - inicio-nosotros */
 
-
-/* ========= Inicio Nosotros ========= */
-
+/* Contenedor secciones nosotros y general - seccion contenedor */
 .inicio-nosotros,
 .informacion-general {
     display: flex;
@@ -121,40 +141,46 @@ header {
     margin: auto;
 }
 
+/* Títulos de secciones - h3 seccion */
 .inicio-nosotros h3,
 .informacion-general h3 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
+/* Párrafos generales secciones - p seccion */
 .inicio-nosotros p,
 .informacion-general p {
     color: var(--text-gray-color);
 }
 
+/* Encabezado de sección - titulo seccion */
 .inicio-nosotros .titulo,
 .informacion-general .titulo {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.inicio-nosotros .titulo p, .informacion-general .titulo p {
+/* Subtítulos secciones - subtitulo seccion */
+.inicio-nosotros .titulo p,
+.informacion-general .titulo p {
     font-size: 1.2em;
 }
 
+/* Historia texto - historia */
 .inicio-nosotros .historia p {
     padding: 15px 0;
 }
 
-/* ==== Inicio Cartas Informacion ==== */
-
+/* Cartas informativas - cartas informacion */
 .inicio-nosotros .cartas-informacion {
     display: flex;
     justify-content: space-between;
     margin: 40px 0;
 }
 
-.inicio-nosotros .cartas-informacion>div {
+/* Cada carta individual - carta individual */
+.inicio-nosotros .cartas-informacion>article {
     border: 1px solid rgb(216, 216, 216);
     border-radius: 10px;
     margin: 0 10px;
@@ -170,24 +196,29 @@ header {
     background-color: white;
 }
 
-.inicio-nosotros .cartas-informacion>div:hover {
+/* Hover carta - hover carta */
+.inicio-nosotros .cartas-informacion>article:hover {
     box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
 }
 
-.inicio-nosotros .cartas-informacion>div .icono {
+/* Icono dentro de carta - icono carta */
+.inicio-nosotros .cartas-informacion>article .icono {
     background-color: #00006630;
     height: 50px;
     width: 50px;
     border-radius: 100%;
 }
 
-.inicio-nosotros .cartas-informacion>div p {
+/* Texto dentro de carta - texto carta */
+.inicio-nosotros .cartas-informacion>article p {
     font-size: 0.8em;
 }
 
-/*============ Estilos Tabla Horarios =============*/
-
+/* ======================= */
+/* ===== TABLA HORARIOS === */
+/* ======================= */
+/* Tabla de información general - tabla horarios */
 .tabla-horarios {
     width: 100%;
     table-layout: fixed;
@@ -197,6 +228,7 @@ header {
     margin: 30px 0 50px 0;
 }
 
+/* Caption tabla horarios - caption tabla */
 .tabla-horarios caption {
     background-color: var(--primary-color);
     color: white;
@@ -207,10 +239,12 @@ header {
     border-radius: 10px 10px 0 0;
 }
 
+/* Icono caption tabla - icono caption */
 .tabla-horarios caption img {
     margin-bottom: -3px;
 }
 
+/* Encabezado tabla horarios - th tabla */
 .tabla-horarios thead th {
     padding: 20px;
     text-align: start;
@@ -218,22 +252,23 @@ header {
     background-color: #f3f3f3df;
 }
 
+/* Celdas tabla horarios - td tabla */
 .tabla-horarios tbody td {
     padding: 20px;
     border-bottom: 1px solid rgb(216, 216, 216);
 }
 
-
-/*========== Matriculacion y servicios ============*/
-
+/* ======================= */
+/* ===== MATRICULACION Y SERVICIOS ==== */
+/* ======================= */
+/* Contenedor matriculación y servicios - matriculacion-servicios */
 .matriculacion-servicios {
     display: flex;
     gap: 30px;
 }
 
-
-
-.matriculacion-servicios>div {
+/* Cada bloque matriculación o servicios - articulo servicio */
+.matriculacion-servicios>article {
     width: 50%;
     padding: 10px 40px;
     border-radius: 15px;
@@ -242,6 +277,7 @@ header {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Título de cada bloque - titulo card */
 .matriculacion-servicios .titulo-card {
     display: flex;
     align-items: center;
@@ -250,23 +286,25 @@ header {
     gap: 10px;
 }
 
+/* Lista dentro de bloques - lista items */
 .listas li {
     line-height: 24px;
     margin-bottom: 20px;
 }
 
+/* Subtexto lista - span lista */
 .listas li span {
     color: var(--text-gray-color);
 }
 
+/* Fondo icono gris - icono gris */
 .fondo-icono-gris {
     background-color: rgb(235, 235, 235);
     padding: 15px;
     border-radius: 15px;
 }
 
-
-
+/* Fondo icono verde - icono verde */
 .fondo-icono-verde {
     background-color: rgb(0, 184, 84);
     padding: 15px;
@@ -274,10 +312,12 @@ header {
     color: white;
 }
 
-/*=====================================================*/
-/*=================== CONTACTO ========================*/
-/*=====================================================*/
 
+/* =================================================== */
+/* ==================== CONTACTO ===================== */
+/* =================================================== */
+
+/* Contenedor principal sección contacto - contacto-main */
 .contacto-main {
     padding-top: 83px;
     display: flex;
@@ -285,11 +325,13 @@ header {
     align-items: center;
 }
 
+/* Título principal contacto - h2 contacto */
 .contacto-main h2 {
     font-size: 3em;
     margin-bottom: 15px;
 }
 
+/* Párrafo introductorio contacto - p contacto */
 .contacto-main>p {
     color: var(--text-gray-color);
     max-width: 60vw;
@@ -297,29 +339,35 @@ header {
     font-size: 1.2em;
 }
 
+/* Contenedor información contacto (tarjetas) - info contacto */
 .contacto-main .informacion {
     display: flex;
     padding: 50px 20px;
     width: 80%;
 }
 
+/* Cada columna dentro de información contacto - columna contacto */
 .contacto-main .informacion>div {
     width: 50%;
 }
 
-/*=================== Contacto > Informacion ========================*/
+/* =============================== */
+/* Contacto > Tarjetas información  */
+/* =============================== */
 
+/* Contenedor tarjetas - cartas contacto */
 .contacto-main .informacion .cartas {
     font-size: 0.8em;
     margin-right: 50px;
-
 }
 
+/* Título dentro de sección de cartas - h3 cartas contacto */
 .contacto-main .informacion .cartas>h3 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
+/* Cada tarjeta individual - tarjeta individual contacto */
 .contacto-main .informacion .cartas>div {
     padding: 20px;
     border: 1px solid rgb(216, 216, 216);
@@ -330,11 +378,14 @@ header {
     margin-bottom: 30px;
 }
 
+/* Título dentro de cada tarjeta - h3 tarjeta */
 .contacto-main .informacion .cartas>div h3 {
     margin-bottom: 5px;
 }
 
-.contacto-main .informacion .cartas .icono, .cartas-informacion .icono {
+/* Icono dentro de tarjetas - icono tarjeta */
+.contacto-main .informacion .cartas .icono,
+.cartas-informacion .icono {
     width: 45px;
     height: 45px;
     border-radius: 10px;
@@ -344,10 +395,12 @@ header {
 }
 
 .contacto-main .informacion .cartas .icono img {
+    /* Imagen icono tarjeta - img icono contacto */
     width: 60%;
     height: 60%;
 }
 
+/* Colores para iconos - iconos color */
 .icono-azul {
     background-color: #0064fa24;
 }
@@ -356,15 +409,16 @@ header {
     background-color: #00fa1d24;
 }
 
+/* Texto dentro de tarjeta - texto tarjeta contacto */
 .contacto-main .informacion .cartas p {
     color: var(--text-gray-color);
 }
 
+/* Horarios dentro de tarjeta - horario tarjeta contacto */
 .contacto-main .informacion .cartas .horario h4 {
     margin-bottom: 6px;
     font-size: 1.2em;
 }
-
 
 .contacto-main .informacion .cartas .horario {
     background-color: rgb(237, 237, 237);
@@ -372,9 +426,11 @@ header {
     line-height: 0px;
 }
 
+/* =============================== */
+/* Contacto > Formulario            */
+/* =============================== */
 
-/*=================== Contacto > formulario ========================*/
-
+/* Contenedor formulario - formulario-contacto */
 .formulario-contacto {
     background-color: white;
     border: 1px solid rgb(216, 216, 216);
@@ -383,19 +439,25 @@ header {
     padding: 40px;
 }
 
-.formulario-contacto .input, .textarea {
+/* Campos de input y textarea - input contacto */
+.formulario-contacto .input,
+.textarea {
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin-bottom: 20px;
 }
 
-.formulario-contacto .input input, select, .textarea textarea {
+/* Estilo inputs y selects - input estilo */
+.formulario-contacto .input input,
+select,
+.textarea textarea {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid rgb(216, 216, 216);
 }
 
+/* Botón enviar contacto - boton contacto */
 .formulario-contacto button {
     width: 100%;
     font-size: 1em;
@@ -409,11 +471,13 @@ header {
 }
 
 .formulario-contacto button:hover {
+    /* Hover botón contacto - hover boton contacto */
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
 }
 
+/* Radio buttons contacto - radio contacto */
 .formulario-contacto .input-radio {
     display: flex;
     font-size: 0.9em;
@@ -421,12 +485,14 @@ header {
 }
 
 .formulario-contacto .input-radio div {
+    /* Cada opción radio - radio div */
     display: flex;
     align-items: center;
     gap: 10px;
     margin-right: 10px;
 }
 
+/* Términos y condiciones formulario contacto - terminos contacto */
 .formulario-contacto .terminos-condiciones {
     display: flex;
     gap: 10px;
@@ -436,15 +502,16 @@ header {
 }
 
 .formulario-contacto .terminos-condiciones span {
+    /* Resaltar link términos - terminos span */
     color: var(--primary-color);
     font-weight: 500;
 }
 
+/* =================================================== */
+/* ================= OFERTA EDUCATIVA ================= */
+/* =================================================== */
 
-/*=====================================================*/
-/*=============== OFERTA EDUCATIVA ====================*/
-/*=====================================================*/
-
+/* Contenedor principal oferta educativa - oferta-educativa-main */
 .oferta-educativa-main {
     padding-top: 100px;
     display: flex;
@@ -452,11 +519,13 @@ header {
     align-items: center;
 }
 
+/* Título principal oferta educativa - h2 oferta */
 .oferta-educativa-main h2 {
     font-size: 2.4em;
     margin-bottom: 12px;
 }
 
+/* Subtítulo oferta educativa - p oferta */
 .oferta-educativa-main>p {
     font-size: 1.1em;
     color: var(--text-gray-color);
@@ -464,8 +533,8 @@ header {
     text-align: center;
 }
 
-/* ======== Ciclos ============ */
-
+/* ======================= */
+/* Ciclos formativos - ciclos oferta */
 .oferta-educativa-main .ciclos {
     padding: 60px 20px;
     display: flex;
@@ -475,6 +544,7 @@ header {
     gap: 30px;
 }
 
+/* Cada ciclo individual - ciclo individual */
 .oferta-educativa-main .ciclos>div {
     display: flex;
     flex-direction: column;
@@ -486,10 +556,12 @@ header {
     transition: 0.1s ease-in-out;
 }
 
+/* Hover ciclo individual - hover ciclo */
 .oferta-educativa-main .ciclos>div:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Icono dentro de ciclo - icono ciclo */
 .oferta-educativa-main .ciclos .icono {
     background-color: gray;
     width: 50px;
@@ -498,6 +570,7 @@ header {
     margin-bottom: 25px;
 }
 
+/* Nombre ciclo - h3 ciclo */
 .oferta-educativa-main .ciclos h3 {
     font-weight: 500;
     font-size: 1.2em;
@@ -505,18 +578,20 @@ header {
     margin-bottom: 8px;
 }
 
+/* Tipo de ciclo - tipo ciclo */
 .oferta-educativa-main .ciclos .tipo-ciclo {
     color: rgb(0, 215, 0);
     font-size: 0.8em;
-
 }
 
+/* Descripción ciclo - descripcion ciclo */
 .oferta-educativa-main .ciclos .descripcion-ciclo {
     margin: 20px 0;
     color: var(--text-gray-color);
     line-height: 20px;
 }
 
+/* Información extra ciclo - info extra ciclo */
 .oferta-educativa-main .ciclos .informacion-extra-ciclo {
     display: flex;
     margin-top: auto;
