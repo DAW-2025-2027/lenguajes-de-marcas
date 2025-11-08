@@ -117,7 +117,7 @@ header {
     flex-direction: column;
     padding: 40px 20px;
     align-items: center;
-    max-width: 70vw;
+    max-width: 80vw;
     margin: auto;
 }
 
@@ -186,6 +186,93 @@ header {
     font-size: 0.8em;
 }
 
+/*============ Estilos Tabla Horarios =============*/
+
+.tabla-horarios {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid rgb(216, 216, 216);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px 0 50px 0;
+}
+
+.tabla-horarios caption {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.4em;
+    padding: 20px;
+    font-weight: 600;
+    text-align: start;
+    border-radius: 10px 10px 0 0;
+}
+
+.tabla-horarios caption img {
+    margin-bottom: -3px;
+}
+
+.tabla-horarios thead th {
+    padding: 20px;
+    text-align: start;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    background-color: #f3f3f3df;
+}
+
+.tabla-horarios tbody td {
+    padding: 20px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+
+/*========== Matriculacion y servicios ============*/
+
+.matriculacion-servicios {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.matriculacion-servicios>div {
+    width: 50%;
+    padding: 10px 40px;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.matriculacion-servicios .titulo-card {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.4em;
+    gap: 10px;
+}
+
+.listas li {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.listas li span {
+    color: var(--text-gray-color);
+}
+
+.fondo-icono-gris {
+    background-color: rgb(235, 235, 235);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+
+.fondo-icono-verde {
+    background-color: rgb(0, 184, 84);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
 
 /*=====================================================*/
 /*=================== CONTACTO ========================*/
@@ -256,17 +343,17 @@ header {
     justify-content: center;
 }
 
-.contacto-main .informacion .cartas .icono img{
+.contacto-main .informacion .cartas .icono img {
     width: 60%;
     height: 60%;
 }
 
 .icono-azul {
-   background-color: #0064fa24;
+    background-color: #0064fa24;
 }
 
 .icono-verde {
-   background-color: #00fa1d24;
+    background-color: #00fa1d24;
 }
 
 .contacto-main .informacion .cartas p {
