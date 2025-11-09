@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oferta Educativa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- ===================== ENCABEZADO / HEADER ====================== -->
+    <!-- cable: header -->
     <header>
+        <!-- cable: logo -->
         <div class="logo">
-            <!-- <div>IES</div> -->
             <h1>IES de Teis</h1>
             <span>Vigo · Formación Profesional</span>
         </div>
+
+        <!-- cable: nav principal -->
         <nav class="inicio-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -23,97 +27,114 @@
             </ul>
         </nav>
     </header>
+
+    <!-- ===================== CONTENIDO PRINCIPAL ====================== -->
+    <!-- cable: oferta-educativa-main -->
     <main class="oferta-educativa-main">
+        <!-- cable: h2 oferta -->
         <h2>Oferta Educativa</h2>
+
+        <!-- cable: p oferta -->
         <p>
             Ciclos formativos de Formación Profesional en el ámbito de las Tecnologías
             de la Información
         </p>
 
-        <div class="ciclos">
-            <div>
-                <div class="icono">
+        <!-- ===================== SECCIÓN: CICLOS FORMATIVOS ====================== -->
+
+        <section class="ciclos">
+            <!-- cable: ciclo individual -->
+            <article>
+                <!-- cable: icono ciclo -->
+                <figure class="icono">
                     <img src="sources/img/code.svg" alt="icono de codigo">
-                </div>
+                </figure>
+                <!-- cable: nombre ciclo -->
                 <h3>Desarrollo de Aplicaciones Web</h3>
+                <!-- cable: tipo ciclo -->
                 <span class="tipo-ciclo">Ciclo Formativo de Grado Superior</span>
+                <!-- cable: descripcion ciclo -->
                 <p class="descripcion-ciclo">Aprende a crear aplicaciones web modernas con las últimas tecnologías del
                     mercado.</p>
-                <div class="informacion-extra-ciclo">
+                <!-- cable: informacion extra ciclo -->
+                <footer class="informacion-extra-ciclo">
                     <span>2000 horas</span>
                     <a href="">Mas Informacion -></a>
-                </div>
-            </div>
-            <div>
-                <div class="icono">
+                </footer>
+            </article>
+
+            <article>
+                <figure class="icono">
                     <img src="sources/img/telefono-azul.svg" alt="icono de telefono">
-                </div>
+                </figure>
                 <h3>Desarrollo de Aplicaciones Multiplataforma</h3>
                 <span class="tipo-ciclo">Ciclo Formativo de Grado Superior</span>
                 <p class="descripcion-ciclo">Desarrolla aplicaciones para dispositivos móviles y multiplataforma.</p>
-                <div class="informacion-extra-ciclo">
+                <footer class="informacion-extra-ciclo">
                     <span>2000 horas</span>
                     <a href="">Mas Informacion -></a>
-                </div>
-            </div>
-            <div>
-                <div class="icono">
+                </footer>
+            </article>
+
+            <article>
+                <figure class="icono">
                     <img src="sources/img/sistemas-1.svg" alt="icono de sistemas">
-                </div>
+                </figure>
                 <h3>Administración de Sistemas Informáticos en Red</h3>
                 <span class="tipo-ciclo">Ciclo Formativo de Grado Superior</span>
                 <p class="descripcion-ciclo">Gestiona y administra sistemas informáticos y redes empresariales.</p>
-                <div class="informacion-extra-ciclo">
+                <footer class="informacion-extra-ciclo">
                     <span>2000 horas</span>
                     <a href="">Mas Informacion -></a>
-                </div>
-            </div>
-            <div>
-                <div class="icono">
+                </footer>
+            </article>
+
+            <article>
+                <figure class="icono">
                     <img src="sources/img/sistemas-2.svg" alt="icono de sistemas">
-                </div>
+                </figure>
                 <h3>Sistemas Microinformáticos y Redes</h3>
                 <span class="tipo-ciclo">Ciclo Formativo de Grado Medio</span>
                 <p class="descripcion-ciclo">
                     Aprende a crear aplicaciones web modernas con las últimas tecnologías del
                     mercado.
                 </p>
-                <div class="informacion-extra-ciclo">
+                <footer class="informacion-extra-ciclo">
                     <span>2000 horas</span>
                     <a href="">Mas Informacion -></a>
-                </div>
-            </div>
-            <div>
-                <div class="icono">
+                </footer>
+            </article>
+
+            <article>
+                <figure class="icono">
                     <img src="sources/img/base-datos.svg" alt="icono de base de datos">
-                </div>
+                </figure>
                 <h3>Administración de Bases de Datos</h3>
                 <span class="tipo-ciclo">Curso de Especialización</span>
                 <p class="descripcion-ciclo">
                     Especialízate en la gestión y administración de bases de datos
                     empresariales.
                 </p>
-                <div class="informacion-extra-ciclo">
+                <footer class="informacion-extra-ciclo">
                     <span>720 horas</span>
                     <a href="">Mas Informacion -></a>
-                </div>
-            </div>
-            <div>
-                <div class="icono">
+                </footer>
+            </article>
+
+            <article>
+                <figure class="icono">
                     <img src="sources/img/graduacion.svg" alt="icono de graduacion">
-                </div>
+                </figure>
                 <h3>Ciberseguridad en Entornos de las TI</h3>
                 <span class="tipo-ciclo">Curso de Especialización</span>
                 <p class="descripcion-ciclo">Protege sistemas y redes frente a amenazas y ataques informáticos.</p>
-                <div class="informacion-extra-ciclo">
+                <footer class="informacion-extra-ciclo">
                     <span>720 horas</span>
                     <a href="">Mas Informacion -></a>
-                </div>
-            </div>
-        </div>
-
+                </footer>
+            </article>
+        </section>
     </main>
-
 </body>
 
 </html>

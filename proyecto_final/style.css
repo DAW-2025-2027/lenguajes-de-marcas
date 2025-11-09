@@ -65,7 +65,7 @@ header {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Navegación principal header - nav inicio-nav */
+/* Navegación principal header - nav principal */
 .inicio-nav ul li {
     display: inline;
     padding: 5px 20px;
@@ -545,7 +545,7 @@ select,
 }
 
 /* Cada ciclo individual - ciclo individual */
-.oferta-educativa-main .ciclos>div {
+.oferta-educativa-main .ciclos>article {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -556,8 +556,8 @@ select,
     transition: 0.1s ease-in-out;
 }
 
-/* Hover ciclo individual - hover ciclo */
-.oferta-educativa-main .ciclos>div:hover {
+/* Hover ciclo individual - ciclo individual */
+.oferta-educativa-main .ciclos>article:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -572,7 +572,7 @@ select,
     justify-content: center;
 }
 
-/* Nombre ciclo - h3 ciclo */
+/* Nombre ciclo - nombre ciclo */
 .oferta-educativa-main .ciclos h3 {
     font-weight: 500;
     font-size: 1.2em;
