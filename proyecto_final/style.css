@@ -66,9 +66,19 @@ header {
 }
 
 /* Navegación principal header - nav principal */
+.inicio-nav ul  {
+    padding-right: 20px;
+}
+
 .inicio-nav ul li {
     display: inline;
     padding: 5px 20px;
+    text-decoration: none;
+}
+
+.inicio-nav ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 /* ======================= */
@@ -622,4 +632,36 @@ select,
 .oferta-educativa-main .ciclos .informacion-extra-ciclo a {
     text-decoration: none;
     color: #000066;
+}
+
+/* =================================================== */
+/* ==================== FOOTER ===================== */
+/* =================================================== */
+
+/* Contenedor principal del pie - footer principal */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Contenido del footer - footer contenido */
+.footer-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Texto del footer - footer texto */
+.footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.footer-enlaces a:hover {
+    /* Hover enlaces footer - hover footer enlaces */
+    opacity: 0.7;
 }
