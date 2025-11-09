@@ -127,22 +127,22 @@
                         <!-- cable: input contacto -->
                         <label class="input">
                             <!-- cable: input estilo -->
-                            <span class="label-text">Nombre completo</span>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+                            <span class="label-text">Nombre completo *</span>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
                         </label>
 
                         <!-- cable: input contacto -->
                         <label class="input">
                             <!-- cable: input estilo -->
-                            <span class="label-text">Email</span>
-                            <input type="email" id="email" name="email" placeholder="tu@gmail.com" />
+                            <span class="label-text">Email *</span>
+                            <input type="email" id="email" name="email" placeholder="tu@gmail.com" required />
                         </label>
 
                         <!-- cable: input contacto -->
                         <label class="input">
                             <!-- cable: input estilo -->
-                            <span class="label-text">Teléfono</span>
-                            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" />
+                            <span class="label-text">Teléfono *</span>
+                            <input type="number" id="telefono" name="telefono" placeholder="Tu teléfono" required />
                         </label>
 
                         <!-- cable: input contacto -->
@@ -172,8 +172,8 @@
                         <!-- cable: input contacto -->
                         <label class="input">
                             <!-- cable: input estilo -->
-                            <span class="label-text">Provincia</span>
-                            <select name="provincia" id="provincia">
+                            <span class="label-text">Provincia *</span>
+                            <select name="provincia" id="provincia" required>
                                 <option value="">Provincia...</option>
                                 <option value="pontevedra">Pontevedra</option>
                                 <option value="lugo">Lugo</option>
@@ -192,7 +192,7 @@
 
                         <!-- cable: terminos contacto -->
                         <label class="terminos-condiciones">
-                            <input type="checkbox" id="termino" name="termino" />
+                            <input type="checkbox" id="termino" name="termino" required />
                             He leído y acepto los <span><!-- cable: terminos span -->"Términos y Condiciones"</span>
                         </label>
 
